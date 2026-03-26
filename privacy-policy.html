@@ -33,7 +33,17 @@ color:#38bdf8;
 }
 </style>
 </head>
-
+<script>
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var img = new Image();
+  img.src = "https://onyxkt.com/click?campaign_id=353"
+    + "&referrer=" + encodeURIComponent(document.referrer)
+    + "&utm_source=" + params.get("utm_source")
+    + "&utm_campaign=" + params.get("utm_campaign")
+    + "&rand=" + Math.random();
+})();
+</script>
 <body>
 <div class="container">
 
